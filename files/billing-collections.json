@@ -1,15 +1,15 @@
 {
   "header": {
     "recordType": "H",
-    "runId": "RUN-20260918-001",
-    "createdAt": "2026-09-18T15:33:00+02:00",
+    "runId": "RUN-20240612-001",
+    "createdAt": "2024-06-12T15:33:00+02:00",
     "createdBy": "nasief.khan"
   },
   "body": [
     {
       "recordType": "B",
       "collectionId": "COL-0001",
-      "actionDate": "2026-09-19",
+      "actionDate": "2024-06-12",
       "accountNumber": "4081234567",
       "branchCode": "250655",
       "accountType": 1,
@@ -19,7 +19,7 @@
     {
       "recordType": "B",
       "collectionId": "COL-0002",
-      "actionDate": "2026-09-19",
+      "actionDate": "2024-06-12",
       "accountNumber": "62343678901",
       "branchCode": "051001",
       "accountType": 1,
@@ -29,7 +29,7 @@
     {
       "recordType": "B",
       "collectionId": "COL-0003",
-      "actionDate": "2026-09-19",
+      "actionDate": "2024-06-12",
       "accountNumber": "1122334455",
       "branchCode": "198765",
       "accountType": 3,
@@ -39,7 +39,7 @@
     {
       "recordType": "B",
       "collectionId": "COL-0004",
-      "actionDate": "2026-09-19",
+      "actionDate": "2024-06-12",
       "accountNumber": "1009283746",
       "branchCode": "470010",
       "accountType": 1,
@@ -49,7 +49,7 @@
     {
       "recordType": "B",
       "collectionId": "COL-0005",
-      "actionDate": "2026-09-19",
+      "actionDate": "2024-06-12",
       "accountNumber": "20556789012",
       "branchCode": "632005",
       "accountType": 2,
@@ -59,7 +59,7 @@
     {
       "recordType": "B",
       "collectionId": "COL-0006",
-      "actionDate": "2026-09-19",
+      "actionDate": "2024-06-12",
       "accountNumber": "3890123456",
       "branchCode": "450105",
       "accountType": 1,
@@ -69,7 +69,7 @@
     {
       "recordType": "B",
       "collectionId": "COL-0007",
-      "actionDate": "2026-09-19",
+      "actionDate": "2024-06-12",
       "accountNumber": "501234567",
       "branchCode": "580105",
       "accountType": 3,
@@ -79,7 +79,7 @@
     {
       "recordType": "B",
       "collectionId": "COL-0008",
-      "actionDate": "2026-09-19",
+      "actionDate": "2024-06-12",
       "accountNumber": "7788990011",
       "branchCode": "679000",
       "accountType": 2,
@@ -89,7 +89,7 @@
     {
       "recordType": "B",
       "collectionId": "COL-0009",
-      "actionDate": "2026-09-19",
+      "actionDate": "2024-06-12",
       "accountNumber": "9900112233",
       "branchCode": "250655",
       "accountType": 1,
@@ -99,7 +99,7 @@
     {
       "recordType": "B",
       "collectionId": "COL-0010",
-      "actionDate": "2026-09-19",
+      "actionDate": "2024-06-12",
       "accountNumber": "1468002357",
       "branchCode": "051001",
       "accountType": 3,
