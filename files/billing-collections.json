@@ -1,116 +1,316 @@
 {
   "header": {
     "recordType": "H",
-    "runId": "RUN-20240612-001",
-    "createdAt": "2024-06-12T15:33:00+02:00",
+    "runId": "RUN-20260923-001",
+    "createdAt": "2026-09-23T15:33:00+02:00",
     "createdBy": "nasief.khan"
   },
   "body": [
     {
       "recordType": "B",
       "collectionId": "COL-0001",
-      "actionDate": "2024-06-12",
+      "actionDate": "2026-09-22",
       "accountNumber": "4081234567",
       "branchCode": "250655",
       "accountType": 1,
       "amountInCents": 150000,
-      "references": "INV-1001 monthly premium"
+      "reference": "INV-1001 monthly premium"
     },
     {
       "recordType": "B",
       "collectionId": "COL-0002",
-      "actionDate": "2024-06-12",
+      "actionDate": "2026-09-22",
       "accountNumber": "62343678901",
       "branchCode": "051001",
       "accountType": 1,
       "amountInCents": 7550,
-      "references": "INV-1002 policy excess"
+      "reference": "INV-1002 policy excess"
     },
     {
       "recordType": "B",
       "collectionId": "COL-0003",
-      "actionDate": "2024-06-12",
+      "actionDate": "2026-09-22",
       "accountNumber": "1122334455",
       "branchCode": "198765",
       "accountType": 3,
       "amountInCents": 25000,
-      "references": "INV-1003 transmission debit"
+      "reference": "INV-1003 transmission debit"
     },
     {
       "recordType": "B",
       "collectionId": "COL-0004",
-      "actionDate": "2024-06-12",
+      "actionDate": "2026-09-22",
       "accountNumber": "1009283746",
       "branchCode": "470010",
       "accountType": 1,
       "amountInCents": 8999,
-      "references": "INV-1004 monthly premium"
+      "reference": "INV-1004 monthly premium"
     },
     {
       "recordType": "B",
       "collectionId": "COL-0005",
-      "actionDate": "2024-06-12",
+      "actionDate": "2026-09-22",
       "accountNumber": "20556789012",
       "branchCode": "632005",
       "accountType": 2,
       "amountInCents": 45000,
-      "references": "INV-1005 savings collection"
+      "reference": "INV-1005 savings collection"
     },
     {
       "recordType": "B",
       "collectionId": "COL-0006",
-      "actionDate": "2024-06-12",
+      "actionDate": "2026-09-22",
       "accountNumber": "3890123456",
       "branchCode": "450105",
       "accountType": 1,
       "amountInCents": 120000,
-      "references": "INV-1006 monthly premium"
+      "reference": "INV-1006 monthly premium"
     },
     {
       "recordType": "B",
       "collectionId": "COL-0007",
-      "actionDate": "2024-06-12",
+      "actionDate": "2026-09-22",
       "accountNumber": "501234567",
       "branchCode": "580105",
       "accountType": 3,
       "amountInCents": 17500,
-      "references": "INV-1007 transmission debit"
+      "reference": "INV-1007 transmission debit"
     },
     {
       "recordType": "B",
       "collectionId": "COL-0008",
-      "actionDate": "2024-06-12",
+      "actionDate": "2026-09-22",
       "accountNumber": "7788990011",
       "branchCode": "679000",
       "accountType": 2,
       "amountInCents": 3200,
-      "references": "INV-1008 policy excess"
+      "reference": "INV-1008 policy excess"
     },
     {
       "recordType": "B",
       "collectionId": "COL-0009",
-      "actionDate": "2024-06-12",
+      "actionDate": "2026-09-22",
       "accountNumber": "9900112233",
       "branchCode": "250655",
       "accountType": 1,
       "amountInCents": 56000,
-      "references": "INV-1009 monthly premium"
+      "reference": "INV-1009 monthly premium"
     },
     {
       "recordType": "B",
       "collectionId": "COL-0010",
-      "actionDate": "2024-06-12",
+      "actionDate": "2026-09-22",
       "accountNumber": "1468002357",
       "branchCode": "051001",
       "accountType": 3,
       "amountInCents": 9900,
-      "references": "INV-1010 transmission debit"
+      "reference": "INV-1010 transmission debit"
+    },
+    {
+      "recordType": "B",
+      "collectionId": "COL-0011",
+      "actionDate": "2026-09-23",
+      "accountNumber": "3123456789",
+      "branchCode": "340200",
+      "accountType": 1,
+      "amountInCents": 27050,
+      "reference": "INV-1011 monthly premium"
+    },
+    {
+      "recordType": "B",
+      "collectionId": "COL-0012",
+      "actionDate": "2026-09-23",
+      "accountNumber": "9876543210",
+      "branchCode": "600256",
+      "accountType": 2,
+      "amountInCents": 17500,
+      "reference": "INV-1012 savings collection"
+    },
+    {
+      "recordType": "B",
+      "collectionId": "COL-0013",
+      "actionDate": "2026-09-23",
+      "accountNumber": "1827364556",
+      "branchCode": "123456",
+      "accountType": 1,
+      "amountInCents": 9850,
+      "reference": "INV-1013 policy excess"
+    },
+    {
+      "recordType": "B",
+      "collectionId": "COL-0014",
+      "actionDate": "2026-09-23",
+      "accountNumber": "2394872654",
+      "branchCode": "222222",
+      "accountType": 2,
+      "amountInCents": 37500,
+      "reference": "INV-1014 monthly premium"
+    },
+    {
+      "recordType": "B",
+      "collectionId": "COL-0015",
+      "actionDate": "2026-09-23",
+      "accountNumber": "8834567890",
+      "branchCode": "333333",
+      "accountType": 3,
+      "amountInCents": 21400,
+      "reference": "INV-1015 transmission debit"
+    },
+    {
+      "recordType": "B",
+      "collectionId": "COL-0016",
+      "actionDate": "2026-09-23",
+      "accountNumber": "4561230987",
+      "branchCode": "444444",
+      "accountType": 1,
+      "amountInCents": 46900,
+      "reference": "INV-1016 monthly premium"
+    },
+    {
+      "recordType": "B",
+      "collectionId": "COL-0017",
+      "actionDate": "2026-09-23",
+      "accountNumber": "9991122334",
+      "branchCode": "555555",
+      "accountType": 2,
+      "amountInCents": 49000,
+      "reference": "INV-1017 savings collection"
+    },
+    {
+      "recordType": "B",
+      "collectionId": "COL-0018",
+      "actionDate": "2026-09-23",
+      "accountNumber": "4488776655",
+      "branchCode": "666666",
+      "accountType": 1,
+      "amountInCents": 9000,
+      "reference": "INV-1018 policy excess"
+    },
+    {
+      "recordType": "B",
+      "collectionId": "COL-0019",
+      "actionDate": "2026-09-23",
+      "accountNumber": "6688990012",
+      "branchCode": "777777",
+      "accountType": 2,
+      "amountInCents": 50150,
+      "reference": "INV-1019 monthly premium"
+    },
+    {
+      "recordType": "B",
+      "collectionId": "COL-0020",
+      "actionDate": "2026-09-23",
+      "accountNumber": "2359783401",
+      "branchCode": "888888",
+      "accountType": 3,
+      "amountInCents": 7850,
+      "reference": "INV-1020 transmission debit"
+    },
+    {
+      "recordType": "B",
+      "collectionId": "COL-0021",
+      "actionDate": "2026-09-24",
+      "accountNumber": "1239876540",
+      "branchCode": "999999",
+      "accountType": 1,
+      "amountInCents": 8600,
+      "reference": "INV-1021 monthly premium"
+    },
+    {
+      "recordType": "B",
+      "collectionId": "COL-0022",
+      "actionDate": "2026-09-24",
+      "accountNumber": "2109876543",
+      "branchCode": "111111",
+      "accountType": 1,
+      "amountInCents": 4400,
+      "reference": "INV-1022 policy excess"
+    },
+    {
+      "recordType": "B",
+      "collectionId": "COL-0023",
+      "actionDate": "2026-09-24",
+      "accountNumber": "4422665511",
+      "branchCode": "121212",
+      "accountType": 3,
+      "amountInCents": 16450,
+      "reference": "INV-1023 transmission debit"
+    },
+    {
+      "recordType": "B",
+      "collectionId": "COL-0024",
+      "actionDate": "2026-09-24",
+      "accountNumber": "6655443322",
+      "branchCode": "232323",
+      "accountType": 1,
+      "amountInCents": 20000,
+      "reference": "INV-1024 monthly premium"
+    },
+    {
+      "recordType": "B",
+      "collectionId": "COL-0025",
+      "actionDate": "2026-09-24",
+      "accountNumber": "5283947299",
+      "branchCode": "343434",
+      "accountType": 2,
+      "amountInCents": 118900,
+      "reference": "INV-1025 savings collection"
+    },
+    {
+      "recordType": "B",
+      "collectionId": "COL-0026",
+      "actionDate": "2026-09-24",
+      "accountNumber": "8374629102",
+      "branchCode": "454545",
+      "accountType": 1,
+      "amountInCents": 47500,
+      "reference": "INV-1026 monthly premium"
+    },
+    {
+      "recordType": "B",
+      "collectionId": "COL-0027",
+      "actionDate": "2026-09-24",
+      "accountNumber": "1234509876",
+      "branchCode": "565656",
+      "accountType": 2,
+      "amountInCents": 3200,
+      "reference": "INV-1027 policy excess"
+    },
+    {
+      "recordType": "B",
+      "collectionId": "COL-0028",
+      "actionDate": "2026-09-24",
+      "accountNumber": "2941758295",
+      "branchCode": "676767",
+      "accountType": 1,
+      "amountInCents": 66000,
+      "reference": "INV-1028 monthly premium"
+    },
+    {
+      "recordType": "B",
+      "collectionId": "COL-0029",
+      "actionDate": "2026-09-24",
+      "accountNumber": "7856234189",
+      "branchCode": "787878",
+      "accountType": 3,
+      "amountInCents": 15900,
+      "reference": "INV-1029 transmission debit"
+    },
+    {
+      "recordType": "B",
+      "collectionId": "COL-0030",
+      "actionDate": "2026-09-24",
+      "accountNumber": "5678901234",
+      "branchCode": "898989",
+      "accountType": 1,
+      "amountInCents": 7400,
+      "reference": "INV-1030 monthly premium"
     }
   ],
   "trailer": {
     "recordType": "T",
-    "count": 10,
-    "totalCents": 443149,
-    "hashTotal": 112663783305
+    "count": 30,
+    "totalCents": 872249,
+    "hashTotal": 262375275095
   }
 }

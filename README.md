@@ -33,7 +33,84 @@ docker compose down
 
 ---
 
+## What happens to the data
 
+```
+JSON file                    after parse + filter              billing CSV
+(header + body)              BillingRun                        (H / B / T)
+─────────────                ────────────────────              ────────────
+header.runId          ──►    runId                      ──►    H line
+header.createdAt      ──►    createdAt                  ──►    H line
+header.createdBy      ──►    createdBy                  ──►    H line
+body[]                ──►    keep rows where                   one B line
+                             actionDate === today              per collection
+                             then map each row          ──►
+                             reference stays reference
+                             JSON trailer is ignored    ──►    T line is
+                                                               recalculated
+```
+
+Only collections for **today** go into the run. Other action dates stay in the JSON and are not billed.
+
+### Tiny example
+
+Say today is `2026-09-23`. The JSON has two body rows (plus a third for tomorrow, which we drop):
+
+```json
+{
+  "header": {
+    "runId": "RUN-20260923-001",
+    "createdAt": "2026-09-23T15:33:00+02:00",
+    "createdBy": "nasief.khan"
+  },
+  "body": [
+    {
+      "collectionId": "COL-0001",
+      "actionDate": "2026-09-22",
+      "accountNumber": "4081234567",
+      "branchCode": "250655",
+      "accountType": 1,
+      "amountInCents": 150000,
+      "reference": "INV-1001 monthly premium"
+    },
+    {
+      "collectionId": "COL-0002",
+      "actionDate": "2026-09-23",
+      "accountNumber": "62343678901",
+      "branchCode": "051001",
+      "accountType": 1,
+      "amountInCents": 7550,
+      "reference": "INV-1002 policy excess"
+    }
+  ]
+}
+```
+
+**1. Parse** — `JSON.parse` gives the object above.
+
+**2. Filter** — drop `COL-0001` (`2026-09-22`). Keep `COL-0002`.
+
+**3. Map into a `BillingRun`**
+
+```
+runId:      RUN-20260923-001
+createdAt:  2026-09-23T15:33:00+02:00
+createdBy:  nasief.khan
+collections:
+  - COL-0002 | 2026-09-23 | 62343678901 | 051001 | 1 | 7550 | INV-1002 policy excess
+```
+
+**4. Create CSV** — header from the run, one `B` line per collection, trailer from count / sum of cents / sum of account numbers:
+
+```
+H,RUN-20260923-001,2026-09-23T15:33:00+02:00,nasief.khan
+B,COL-0002,2026-09-23,62343678901,051001,1,7550,INV-1002 policy excess
+T,1,7550,62343678901
+```
+
+That string is what we verify, write to `output/`, and upload to SFTP.
+
+---
 
 ## Assumptions, questions, and choices
 

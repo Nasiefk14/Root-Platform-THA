@@ -17,7 +17,7 @@ export const createBillingFile = (billingRun: BillingRun): string => {
 
     for (const collection of billingRun.collections) {
         lines.push(
-            `B,${collection.collectionId},${billingRun.actionDate},${collection.accountNumber},${collection.branchCode},${collection.accountType},${collection.amountInCents},${collection.reference}`,
+            `B,${collection.collectionId},${collection.actionDate},${collection.accountNumber},${collection.branchCode},${collection.accountType},${collection.amountInCents},${collection.reference}`,
         );
         totalCents += collection.amountInCents;
         hashTotal += Number(collection.accountNumber);

@@ -57,8 +57,8 @@ export const verifyBillingFile = (csv: string, billingRun: BillingRun): void => 
         if (fields[1] !== collection.collectionId) {
             throw new Error(`Invalid billing file - Body row ${i + 1} collection_id ${fields[1]} does not match ${collection.collectionId}`);
         }
-        if (fields[2] !== billingRun.actionDate) {
-            throw new Error(`Invalid billing file - Body row ${i + 1} action_date ${fields[2]} does not match ${billingRun.actionDate}`);
+        if (fields[2] !== collection.actionDate) {
+            throw new Error(`Invalid billing file - Body row ${i + 1} action_date ${fields[2]} does not match ${collection.actionDate}`);
         }
         if (fields[3] !== collection.accountNumber) {
             throw new Error(`Invalid billing file - Body row ${i + 1} account_number ${fields[3]} does not match ${collection.accountNumber}`);

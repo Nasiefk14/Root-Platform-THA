@@ -2,11 +2,8 @@ import type { BillingRun } from "../types.ts";
 import { isActionDateValid, isAllDigits } from "../utils/validation.ts";
 
 export const validateRecords = (billingRun: BillingRun): void => {
-    if (!billingRun.runId || !billingRun.createdBy || !billingRun.actionDate) {
-        throw new Error("runId, createdBy, and actionDate are required");
-    }
-    if (!isActionDateValid(billingRun.actionDate)) {
-        throw new Error("actionDate Must Be YYYY-MM-DD");
+    if (!billingRun.runId || !billingRun.createdBy || !billingRun.createdAt) {
+        throw new Error("runId, createdBy, and createdAt are required");
     }
     if (billingRun.collections.length === 0) {
         throw new Error("Billing Run Has No Collections");
@@ -44,6 +41,9 @@ export const validateRecords = (billingRun: BillingRun): void => {
         }
         if (col.reference.includes(",")) {
             throw new Error(`${colId}: reference must not contain a comma`);
+        }
+        if (!isActionDateValid(col.actionDate)) {
+            throw new Error(`${colId}: actionDate must be in YYYY-MM-DD format`);
         }
     }
 };

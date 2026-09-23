@@ -4,7 +4,7 @@
  * @param value - The string to check.
  * @returns True if every character in the string is a digit and the string is non-empty; false otherwise.
  */
-export function isAllDigits(value: string): boolean {
+export const isAllDigits = (value: string): boolean => {
     if (value.length === 0) {
         return false;
     }
@@ -22,7 +22,7 @@ export function isAllDigits(value: string): boolean {
  * @param value - The date string to validate.
  * @returns True if the string is formatted as "YYYY-MM-DD" and all parts are numeric; false otherwise.
  */
-export function isActionDateValid(value: string): boolean {
+export const isActionDateValid = (value: string): boolean => {
     const dateParts: string[] = value.split("-");
     if (dateParts.length !== 3) {
         return false;
@@ -36,4 +36,4 @@ export function isActionDateValid(value: string): boolean {
         isAllDigits(month) &&
         isAllDigits(day)
     );
-}
+};

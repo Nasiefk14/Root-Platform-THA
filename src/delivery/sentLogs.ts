@@ -10,7 +10,7 @@ const sentPath: string = path.join(import.meta.dirname, "..", "..", "data", "sen
  *
  * @returns {SentRecord[]} An array of SentRecord objects representing previously sent runs.
  */
-function loadSent(): SentRecord[] {
+const loadSent = (): SentRecord[] => {
     if (!fs.existsSync(sentPath)) {
         return [];
     }
@@ -19,8 +19,7 @@ function loadSent(): SentRecord[] {
         return [];
     }
     return JSON.parse(raw) as SentRecord[];
-}
-
+};
 
 /**
  * Writes the full sent-log array to sent.json, creating the data folder if needed.
@@ -28,11 +27,11 @@ function loadSent(): SentRecord[] {
  * @param records - Every sent run to persist, including older ones plus any new row.
  * @returns {void} Nothing. Overwrites sent.json with the given list.
  */
-function saveSent(records: SentRecord[]): void {
+const saveSent = (records: SentRecord[]): void => {
     const dir: string = path.dirname(sentPath);
     fs.mkdirSync(dir, { recursive: true });
     fs.writeFileSync(sentPath, JSON.stringify(records, null, 2), "utf8");
-}
+};
 
 /**
  * Refuses to continue if this run, or any of its collections, was already delivered.
@@ -42,7 +41,7 @@ function saveSent(records: SentRecord[]): void {
  * @param run - The billing run about to be sent.
  * @returns {void} Nothing. Throws if this would be a duplicate send.
  */
-export function checkForDuplicates(run: BillingRun): void {
+export const checkForDuplicates = (run: BillingRun): void => {
     const records: SentRecord[] = loadSent();
 
     const sameRun: SentRecord | undefined = records.find((record) => record.runId === run.runId);
@@ -65,7 +64,7 @@ export function checkForDuplicates(run: BillingRun): void {
             );
         }
     }
-}
+};
 
 /**
  * Appends this run to the sent log after a successful SFTP delivery.
@@ -74,7 +73,7 @@ export function checkForDuplicates(run: BillingRun): void {
  * @param run - The billing run that was just delivered.
  * @returns {void} Nothing. Writes the updated list to sent.json.
  */
-export function recordSent(run: BillingRun): void {
+export const recordSent = (run: BillingRun): void => {
     const records: SentRecord[] = loadSent();
 
     let totalCents: number = 0;
@@ -91,4 +90,4 @@ export function recordSent(run: BillingRun): void {
     });
 
     saveSent(records);
-}
+};
